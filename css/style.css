@@ -1,0 +1,105 @@
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Lora, serif;
+    line-height: 1.5;
+    color: #1f1e1c;
+}
+.header{
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    grid-column-gap: 50px;
+    box-sizing: border-box;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(31, 30, 28, 0.2);
+}
+.header-logo a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+.header-ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-item{
+    margin-right: 30px;
+    list-style: none;
+}
+.menu-item:last-child{
+    margin-right: 0;
+}
+.menu-item-link{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+.menu-item-link:hover{
+    text-decoration: underline;
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 50px;
+}
+.article-header{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.article-title{
+    font-size: 46px;
+    line-height: 1.5;
+}
+.article-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.article-text{
+    margin-top: 0;
+}
+.article-figure{
+    margin: 0;
+}
+.article-figcaption{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.article-figure-horizontal .article-figcaption{
+    margin-top: 0;
+}
+.article-img-wide{
+    grid-column: span 3;
+}
+.article-figure-wide{
+    grid-column: span 2;
+}
+.article-figure-horizontal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    grid-column-gap: 50px;
+    box-sizing: border-box;
+    padding: 15px 0;
+    border-top: 1px solid rgba(31, 30, 28, 0.2);
+}
+.footer-logo a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+.footer-logo a:hover{
+    text-decoration: underline;
+}
+.footer-text{
+    display: flex;
+    justify-content: flex-end;
+}
